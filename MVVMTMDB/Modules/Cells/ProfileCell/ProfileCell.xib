@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ProfileCell" customModule="MVVMTMDB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="0Iz-5P-Xku">
+                        <rect key="frame" x="8" y="4" width="55" height="55"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="55" id="KUc-xl-tH4"/>
+                            <constraint firstAttribute="height" constant="55" id="r5m-bK-KUw"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dey-0R-sge">
+                        <rect key="frame" x="257" y="4" width="55" height="55"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="55" id="LoN-Fu-NIh"/>
+                            <constraint firstAttribute="width" constant="55" id="fop-68-aT4"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="filemenu.and.cursorarrow" catalog="system">
+                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </buttonConfiguration>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0Iz-5P-Xku" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="GDb-8P-s9y"/>
+                    <constraint firstItem="0Iz-5P-Xku" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="KzR-vn-WCa"/>
+                    <constraint firstAttribute="trailing" secondItem="Dey-0R-sge" secondAttribute="trailing" constant="8" id="RkN-Vt-ULq"/>
+                    <constraint firstItem="Dey-0R-sge" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="TH5-2U-oeu"/>
+                    <constraint firstAttribute="bottom" secondItem="0Iz-5P-Xku" secondAttribute="bottom" constant="4" id="l9m-2y-dSx"/>
+                    <constraint firstAttribute="bottom" secondItem="Dey-0R-sge" secondAttribute="bottom" constant="4" id="wNh-DQ-JR5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" name="defaultBlue"/>
+            <point key="canvasLocation" x="129.7709923664122" y="-11.619718309859156"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="filemenu.and.cursorarrow" catalog="system" width="128" height="97"/>
+        <image name="profile" width="512" height="512"/>
+        <namedColor name="defaultBlue">
+            <color red="0.047058823529411764" green="0.066666666666666666" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
